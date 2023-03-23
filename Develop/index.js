@@ -1,6 +1,7 @@
 //packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 //array of questions for user input
 function init() {
@@ -9,27 +10,22 @@ function init() {
         .prompt([
             {
                 type: 'input',
-                message: 'Project title',
+                message: 'Enter project title',
                 name: 'title',
             },
             {
                 type: 'input',
-                message: 'Project description',
+                message: 'Enter project description',
                 name: 'description',
             },
             {
                 type: 'input',
-                message: 'Table of contents',
-                name: 'contents',
-            },
-            {
-                type: 'input',
-                message: 'Installation instructions',
+                message: 'Enter installation instructions',
                 name: 'installation',
             },
             {
                 type: 'input',
-                message: 'Usage',
+                message: 'Enter project usage',
                 name: 'usage',
             },
             {
@@ -38,19 +34,30 @@ function init() {
                 name: 'credits',
             },
             {
-                type: 'input',
-                message: 'License',
+                type: 'list',
+                message: 'Pick a license from the list',
+                choices: ['MIT', 'GNU', 'Apache', 'Mozilla'],
                 name: 'license',
             },
             {
                 type: 'input',
-                message: 'Features',
-                name: 'features',
+                message: 'Tests',
+                name: 'test',
             },
             {
                 type: 'input',
                 message: 'How to contribute',
                 name: 'contribute',
+            },
+            {
+                type: 'input',
+                message: 'What is your email?',
+                name: 'email',
+            },
+            {
+                type: 'input',
+                message: 'What is your GitHub profile URL?',
+                name: 'github',
             },
         ])
 
@@ -65,5 +72,8 @@ function init() {
 }
 
 // Function call to initialize app
-init();
+init()
+.then((answers) => {
+    return generateMarkdown(answers);
+})
 
