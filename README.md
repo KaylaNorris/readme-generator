@@ -3,6 +3,17 @@
 ## Description
 This application was made to quickly and efficiently create a README for your projects. It can be challenging to remember all of the sections of a README. Using Inquirer prompts to fill out a README ensures that you'll consistently create a thorough and completed README for every project.  
 
+## Table of Contents
+- [README Generator](#readme-generator)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Prompts Screenshot](#prompts-screenshot)
+  - [Completed README Screenshot](#completed-readme-screenshot)
+  - [Demonstration Video](#demonstration-video)
+  - [License](#license)
+  - [Questions](#questions)
 ## Installation
 
 To use this application you will need to have installed VS Code (or a similar code editor), Gitbash (or use the Mac terminal), and Node.js.
