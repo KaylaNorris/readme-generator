@@ -64,7 +64,7 @@ function init() {
         // TODO: Create a function to write README file
 
         .then((answers) => {
-            const readmeFile = init(answers);
+            const readmeFile = generateMarkdown(answers);
             fs.writeFile('README.md', readmeFile, (err) => {
                 err ? console.error(err) : console.log('README file created!');
             });
@@ -73,7 +73,5 @@ function init() {
 
 // Function call to initialize app
 init()
-.then((answers) => {
-    return generateMarkdown(answers);
-})
+
 
