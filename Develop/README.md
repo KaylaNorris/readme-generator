@@ -1,8 +1,10 @@
 
-  # dflkjf
+  # README Generator
+
+  [![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
 
   ## Description
-  dfkljfd
+  Project description goes here
 
   ## Table of Contents
   - [Description](#descripion)
@@ -14,22 +16,24 @@
   - [Questions](#questions)
 
   ## Installation
-  dfsklfd
+  Project installation instructions go here
 
   ## Usage
-  dsfklfd </br>
+  Project usage goes here </br>
   ![Screenshot 1](ENTER SCREENSHOT URL HERE)
 
+  ## Credits
+  Credits go here
+
   ## License
-  [![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT) </br>
-  This application is under license. Click the badge to learn more.
+  This application is under license. Click the badge at the top to learn more.
 
   ## How to Contribute
-  df;kf
+  Contribution instructions go here
 
   ## Tests
-  dkljf
+  Tests go here
 
   ## Questions
-  For more information, please contact me on Github at [ds;kfd](ds;kfd)</br>
-  or email me at [ds;kf](ds;kf)
+  For more information, please contact me on [GitHub](GitHub goes here)</br>
+  or email me at email goes here

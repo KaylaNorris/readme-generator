@@ -28,7 +28,7 @@ function renderLicenseLink(license) {
 // returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  return `This application is under license. Click the badge to learn more.` || ''
+  return `This application is under license. Click the badge at the top to learn more.` || ''
 }
 
 
@@ -36,6 +36,8 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `
   # ${data.title}
+
+  [![License: ${data.license}](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
   ## Description
   ${data.description}
@@ -56,8 +58,10 @@ function generateMarkdown(data) {
   ${data.usage} </br>
   ![Screenshot 1](ENTER SCREENSHOT URL HERE)
 
+  ## Credits
+  ${data.credits}
+
   ## License
-  [![License: ${data.license}](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)}) </br>
   ${renderLicenseSection(data)}
 
   ## How to Contribute
@@ -67,8 +71,8 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Questions
-  For more information, please contact me on Github at [${data.github}](${data.github})</br>
-  or email me at [${data.email}](${data.email})
+  For more information, please contact me on [GitHub](${data.github})</br>
+  or email me at ${data.email}
 `;
 }
 
